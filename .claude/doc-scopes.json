@@ -1,0 +1,19 @@
+{
+  "docs": [
+    {
+      "doc": "README.md",
+      "scope": ".",
+      "description": "UITests overview — setup, how to run tests, test structure"
+    },
+    {
+      "doc": "iOS/README.md",
+      "scope": "iOS/",
+      "description": "iOS UI test documentation"
+    },
+    {
+      "doc": "Android/README.md",
+      "scope": "Android/",
+      "description": "Android UI test documentation"
+    }
+  ]
+}
