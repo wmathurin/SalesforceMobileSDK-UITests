@@ -24,6 +24,7 @@ Options:
   --device, --iOSDevice=<text>         iOS Simulator device type. Uses SimDeviceType identifier format. (ex: iPhone-SE-3rd-generation)
   -r, --reRun                          Run the validation test again without re-generating the app.
   --sf, --sfdx                         Use SF (formerly SFDX) to generate the app.
+  --sdkVersion=<text>                  SDK version/branch/tag to use for generating the app (e.g. 'dev', '14.0.0'). Defaults to 'dev'.
   -p, --preserverGeneratedApps         Do not cleanup generated apps from previous runs.
   -u, --upgrade, --upgradeFrom=<text>  Run an upgrade test. Provide the SDK version/branch/tag to upgrade FROM (e.g. '12.1.0').
                                        The app is generated with this version, logged in, then upgraded to dev and verified.

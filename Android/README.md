@@ -2,10 +2,16 @@
 
 These tests are designed to validate the functionality of Android apps created using the MobileSDK CLI tools.  Unless otherwise specified each test should run against apps generated using native Java/Kotlin, Cordova, or React Native code.
 
-Basic usage:
-1.  Build the app(s) to be tested on a specific device.
-2.  Run the tests here against the same device and supply the test app's package id as a parameter with the `-e` flag and the key `packageName`.
+## Running Tests
 
-ex:  `adb shell am instrument -w -r -e debug false -e packageName com.mycompany com.salesforce.mobilesdk.mobilesdkuitest.test/android.support.test.runner.AndroidJUnitRunner`
+**For standard testing workflows**, use the Test Orchestrator CLI documented in the [main README](../README.md):
 
-For Development purposes tests can be run in Android Studio by hardcoding the `packageName` variable in `TestApplication.kt` and running against a device that has the app associated with that package name installed. 
+```bash
+./test android <template>
+```
+
+See the main README for all available options including Firebase Test Lab execution, SDK version overrides, upgrade testing, and more.
+
+## Development/Debugging
+
+For development purposes, tests can be run directly in Android Studio by hardcoding the `packageName` variable in `TestApplication.kt` and running against an emulator or device that has the app associated with that package name installed. 
